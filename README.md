@@ -13,19 +13,19 @@ _A modern Neovim port of a deftheme [adaptation][gruber-darker-theme] of an Emac
 ### Lazy (recommended)
 
 ```lua
-{ "blazkowolf/gruber-darker.nvim" }
+{ "miguno/gruber-darker.nvim" }
 ```
 
 ### Packer
 
 ```lua
-use "blazkowolf/gruber-darker.nvim"
+use "miguno/gruber-darker.nvim"
 ```
 
 ### Plug
 
 ```vim
-Plug 'blazkowolf/gruber-darker.nvim'
+Plug 'miguno/gruber-darker.nvim'
 ```
 
 Then, somewhere in your `init.lua`, set the colorscheme
@@ -67,7 +67,7 @@ For example, with [Lazy](https://github.com/folke/lazy.nvim.git)...
 
 ```lua
 {
-  "blazkowolf/gruber-darker.nvim",
+  "miguno/gruber-darker.nvim",
   opts = {
     bold = false,
     italic = {
@@ -82,6 +82,7 @@ For example, with [Lazy](https://github.com/folke/lazy.nvim.git)...
 These repositories were great knowledge sources and their
 inspiration helped immensely with the development of this plugin.
 
+- [blazkowolf/gruber-darker.nvim](https://github.com/blazkowolf/gruber-darker.nvim)
 - [rexim/gruber-darker-theme][gruber-darker-theme]
 - [folke/tokyonight.nvim][tokyonight]
 - [drsooch/gruber-darker-vim][gruber-darker-vim]
