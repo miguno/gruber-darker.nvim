@@ -133,11 +133,12 @@ M.highlights.include = Highlight.new("@include", { link = gruber_hl.yellow })
 ---type or class definitions and annotations
 M.highlights.type = Highlight.new("@type", { link = vim_hl.type })
 ---built-in types
-M.highlights.type_builtin = Highlight.new("@type.builtin", { link = gruber_hl.yellow })
+M.highlights.type_builtin = Highlight.new("@type.builtin", { link = gruber_hl.quartz })
 ---type definitions (e.g. `typedef` in C)
 M.highlights.type_definition = Highlight.new("@type.definition", { link = vim_hl.typedef })
 ---type qualifiers (e.g. `const`)
 -- M.highlights.type_qualifier = Highlight.new("@type.qualifier", {})
+M.highlights.type_qualifier = Highlight.new("@type.qualifier", { link = gruber_hl.quartz })
 
 ---modifiers that affect storage in memory or life-time
 M.highlights.storage_class = Highlight.new("@storageclass", { link = vim_hl.storage_class })
