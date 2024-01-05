@@ -1,8 +1,7 @@
 local Color = require("gruber-darker.color")
-local M = {}
 
 ---@type table<string, Color>
-M = {
+local M = {
   none = Color.none(),
   fg = Color.new(0xe4e4e4),
   ["fg+1"] = Color.new(0xf4f4ff),
