@@ -6,14 +6,14 @@ local Highlight = require("gruber-darker.highlight")
 
 ---@type HighlightsProvider
 local M = {
-	highlights = {},
+  highlights = {},
 }
 
 ---Set `nvim-treesitter` plugin highlights
 function M.setup()
-	for _, value in pairs(M.highlights) do
-		value:setup()
-	end
+  for _, value in pairs(M.highlights) do
+    value:setup()
+  end
 end
 
 -- Neovim tree-sitter highlights sourced from
@@ -24,7 +24,8 @@ end
 ---Line and block comments
 M.highlights.comment = Highlight.new("@comment", { link = vim_hl.comment })
 ---Comments documenting code
-M.highlights.comment_documentation = Highlight.new("@comment.documentation", { link = gruber_hl.green, italic = opts.italic.comments })
+M.highlights.comment_documentation = Highlight.new("@comment.documentation",
+  { link = gruber_hl.green, italic = opts.italic.comments })
 M.highlights.comment_luadoc = Highlight.new("@comment.luadoc", { link = M.highlights.comment_documentation })
 ---Syntax/parser errors
 M.highlights.error = Highlight.new("@error", {})
@@ -118,6 +119,7 @@ M.highlights.debug = Highlight.new("@debug", { link = vim_hl.debug })
 M.highlights.label = Highlight.new("@label", { link = vim_hl.label })
 ---keywords for including modules (e.g. `import` / `from` in Python)
 -- M.highlights.include = Highlight.new("@include", {})
+M.highlights.include = Highlight.new("@include", { link = gruber_hl.yellow })
 ---keywords related to exceptions (e.g. `throw` / `catch`)
 -- M.highlights.exception = Highlight.new("@exception", {})
 
