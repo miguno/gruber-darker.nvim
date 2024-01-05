@@ -75,21 +75,26 @@ M.highlights.float = Highlight.new("@float", { link = vim_hl.float })
 -- Functions
 
 ---Function definitions
-M.highlights.func = Highlight.new("@function", { link = vim_hl.func })
+--M.highlights.func = Highlight.new("@function", { link = vim_hl.func })
+M.highlights.func = Highlight.new("@function", { link = gruber_hl.yellow })
 ---Built-in functions
 M.highlights.func_builtin = Highlight.new("@function.builtin", { link = gruber_hl.yellow })
 ---Function calls
 -- M.highlights.func_call = Highlight.new("@function.call", {})
+M.highlights.func_call = Highlight.new("@function.call", { link = gruber_hl.yellow })
 ---Preprocessor macros
 M.highlights.func_macro = Highlight.new("@function.macro", { link = vim_hl.macro })
 
 ---Method definitions
-M.highlights.method = Highlight.new("@method", { link = vim_hl.func })
+--M.highlights.method = Highlight.new("@method", { link = vim_hl.func })
+M.highlights.method = Highlight.new("@method", { link = gruber_hl.yellow })
 ---Method calls
 -- M.highlights.method_call = Highlight.new("@method.call", {})
+M.highlights.method_call = Highlight.new("@method.call", { link = gruber_hl.yellow })
 
 ---constructor calls and definitions
-M.highlights.constructor = Highlight.new("@constructor", { link = vim_hl.func })
+--M.highlights.constructor = Highlight.new("@constructor", { link = vim_hl.func })
+M.highlights.constructor = Highlight.new("@constructor", { link = gruber_hl.yellow })
 ---parameters of a function
 M.highlights.parameter = Highlight.new("@parameter", { link = vim_hl.identifier })
 
